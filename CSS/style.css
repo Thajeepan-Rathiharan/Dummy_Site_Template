@@ -97,11 +97,15 @@ body {
     max-width: 300px; /* Optional max-width */
     background-color: #333;
     padding: 20px;
-    position: fixed; /* Position menu fixed to keep it on the screen */
+    position: absolute; /* Use absolute positioning */
     top: 80px; /* Adjusted to appear below the button */
     left: 20px; /* Align menu with the button horizontally */
     display: none; /* Initially hidden */
-    z-index: 5; /* Lower z-index to keep it under the button */
+    z-index: 1000; /* High z-index to ensure it stays above other content */
+    /* Additional styles for a smoother experience */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    border-radius: 4px; /* Optional: rounded corners */
+    /* Avoid margin or padding issues affecting layout */
 }
 
 /* Class to show the menu */
@@ -109,22 +113,26 @@ body {
     display: block; /* Show the menu when 'show' class is added */
 }
 
+/* Styling for the menu list */
 .side-menu ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
+/* Styling for individual menu items */
 .side-menu li {
     padding: 10px 0;
 }
 
+/* Styling for links inside the menu */
 .side-menu li a {
     color: white;
     text-decoration: none;
     display: block;
 }
 
+/* Hover effect for menu links */
 .side-menu li a:hover {
     background-color: #575757;
 }
