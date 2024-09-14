@@ -193,35 +193,38 @@ body {
 }
 
 /* Outer box for each category of tiles */
+/* Outer box for each category of tiles */
 .tile-group {
-    padding: 20px; /* Add some padding inside the box */
-    margin: 20px 0; /* Add margin between each group of tiles */
+    padding: 10px; /* Adjust padding to fit closely around content */
+    margin: 20px auto; /* Add margin between each group of tiles, centered */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for the outer box */
     border-radius: 10px; /* Optional: Rounded corners for the outer box */
     background-color: #f9f9f9; /* Optional: Light background color */
+    width: fit-content; /* Ensures the box only grows to fit content */
+    display: inline-block; /* Make it fit tightly around the content */
+    position: relative;
+    left: 350px;
 }
 
 /* Container for the tiles */
 .tiles-container {
     display: flex;
     justify-content: space-around;
-    width: 80%;
-    max-width: 1200px;
-    margin-left: 200px; /* Added margin to push tiles right */
+    gap: 10px; /* Space between tiles without affecting the outer box */
+    width: auto; /* Allow tiles container to adjust naturally */
 }
 
 /* Individual tile styling */
 .tile {
     background-color: #fff;
-    width: 30%;
+    width: 200px; /* Set a fixed width for tiles to fit neatly */
     padding: 20px;
-    /* Margin to create space around the tiles */
-    margin: 25px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
 }
+
 
 .tile:hover {
     transform: translateY(-10px);
