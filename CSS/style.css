@@ -78,6 +78,56 @@ body {
     margin-right: 0;
 }
 
+/* Styling the burger button */
+.burger-menu {
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: fixed;  /* Fixed positioning at the top left */
+    top: 20px;
+    left: 20px;
+    z-index: 10; /* Keep the button on top of other elements */
+}
+
+/* Styling the side menu */
+.side-menu {
+    width: auto; /* Menu adjusts to content width */
+    max-width: 300px; /* Optional max-width */
+    background-color: #333;
+    padding: 20px;
+    position: fixed; /* Position menu fixed to keep it on the screen */
+    top: 80px; /* Adjusted to appear below the button */
+    left: 20px; /* Align menu with the button horizontally */
+    display: none; /* Initially hidden */
+    z-index: 5; /* Lower z-index to keep it under the button */
+}
+
+/* Class to show the menu */
+.side-menu.show {
+    display: block; /* Show the menu when 'show' class is added */
+}
+
+.side-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-menu li {
+    padding: 10px 0;
+}
+
+.side-menu li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.side-menu li a:hover {
+    background-color: #575757;
+}
+
 .qat{
     font-size: 25px;
     margin-left: 225px;
