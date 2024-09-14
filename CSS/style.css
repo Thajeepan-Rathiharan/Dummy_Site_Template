@@ -112,6 +112,7 @@ body {
 /* Class to show the menu */
 .side-menu.show {
     display: block; /* Show the menu when 'show' class is added */
+    margin-top: 65px; /* Adding spacing above the menu bar element to move it down */
 }
 
 /* Styling for the menu list */
