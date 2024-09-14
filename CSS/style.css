@@ -26,6 +26,7 @@ body {
     margin-right: auto; /* Pushes the title to the left */
     font-size: 24px;
     color: white;
+    margin-left: 20px; /* Moved the HomeMaster text away from the burger menu button */
 }
 
 /* Style for the logout hyperlink */
