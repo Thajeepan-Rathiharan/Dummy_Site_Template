@@ -57,7 +57,7 @@ body {
     color: white;
     padding: 10px;
     border-radius: 5px;
-    cursor: pointer;
+    cursor: pointer; /* Makes the users cursor turn into a pointing finger instead of the arrow pointer */
 }
 
 .navbar input[type="text"] {
@@ -146,9 +146,25 @@ body {
     padding: 15px;
 }
 
+/* Outer box CSS rules */
+.outer-box{
+    width: auto;
+    max-width: 1000px;
+    margin-left: 250px;
+    padding: 20px;
+    background-color: grey;
+    border: 2px solid;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px;
+    box-sizing: border-box;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+}
+
+/* CSS rules for navbar_two element */
 .navbar_two{
     font-size: 25px;
-    margin-left: 240px;
     cursor: pointer;
 }
 
@@ -169,8 +185,8 @@ body {
   .dropdown {
     position: relative; /* This positions the dropdown-content relative to the dropdown button */
     display: inline-block;
-    margin-left: 1100px;
-    margin-top: -30px; /* Adjust the value to move the element up by the desired amount */
+    margin-left: 850px; /* Moves the element away from the left side of the screen */
+    margin-top: -30px; /* Moves the element away from the top of the div element/ container */
   }
   
   .dropdown-content {
@@ -204,7 +220,6 @@ body {
 }
 
 /* Outer box for each category of tiles */
-/* Outer box for each category of tiles */
 .tile-group {
     padding: 10px; /* Adjust padding to fit closely around content */
     margin: 20px auto; /* Add margin between each group of tiles, centered */
@@ -214,7 +229,7 @@ body {
     width: fit-content; /* Ensures the box only grows to fit content */
     display: inline-block; /* Make it fit tightly around the content */
     position: relative;
-    left: 350px;
+    left: 170px;
 }
 
 /* Container for the tiles */
