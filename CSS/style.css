@@ -192,6 +192,15 @@ body {
     padding: 15px;
 }
 
+/* Outer box for each category of tiles */
+.tile-group {
+    padding: 20px; /* Add some padding inside the box */
+    margin: 20px 0; /* Add margin between each group of tiles */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for the outer box */
+    border-radius: 10px; /* Optional: Rounded corners for the outer box */
+    background-color: #f9f9f9; /* Optional: Light background color */
+}
+
 /* Container for the tiles */
 .tiles-container {
     display: flex;
