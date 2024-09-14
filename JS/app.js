@@ -21,3 +21,13 @@ document.addEventListener('DOMContentLoaded', function() {
         optionMenu.style.display = 'none';
     }
 });
+
+// Function to hide/show burger menu navigation bar
+// This gets the elements that have the class name 'menuButton' and 'menu' to use them in the function below
+const menuButton = document.getElementById('menuButton');
+const menu = document.getElementById('menu');
+
+// Show the menu after clicking on the button
+menuButton.addEventListener('click', () => {
+    menu.classList.toggle('show');
+});
