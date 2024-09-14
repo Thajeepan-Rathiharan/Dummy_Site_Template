@@ -87,7 +87,7 @@ body {
     border: none;
     cursor: pointer;
     position: fixed;  /* Fixed positioning at the top left */
-    top: 20px;
+    top: 11px; /* Set to 12px to line it up with the word 'HomeMaster' in the header */
     left: 20px;
     z-index: 10; /* Keep the button on top of other elements */
 }
