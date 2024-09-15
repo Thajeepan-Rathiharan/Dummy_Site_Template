@@ -41,7 +41,8 @@ body {
     color: #f04d4d; /* Change color on hover */
 }
 
-/* Updated Navigation bar styling */
+/* Top bar */
+/* Navigation bar styling */
 .navbar {
     display: flex;
     align-items: center;
@@ -79,6 +80,7 @@ body {
     margin-right: 0;
 }
 
+/* Burger menu button*/
 /* Styling the burger button */
 .burger-menu {
     font-size: 24px;
@@ -92,6 +94,7 @@ body {
     z-index: 10; /* Keep the button on top of other elements */
 }
 
+/* Side menu */
 /* Styling the side menu */
 .side-menu {
     width: auto; /* Menu adjusts to content width */
@@ -140,6 +143,7 @@ body {
     background-color: #575757;
 }
 
+/* Quick Access Tiles text styling */
 .qat{
     font-size: 25px;
     margin-left: 225px;
@@ -173,15 +177,17 @@ body {
 }
 
 /* Hovering dropdown menu */
+/* Styling for the hovering dropdown menu colours and button shape */
 .dropbtn {
-    background-color: #04AA6D;
-    color: white;
+    background-color: white;
+    color: black;
     padding: 14px;
     font-size: 14px;
     border: none;
     cursor: pointer; /* Adds a pointer cursor on hover */
   }
   
+/* Positioning rules for the hovering dropdown menu */  
   .dropdown {
     position: relative; /* This positions the dropdown-content relative to the dropdown button */
     display: inline-block;
@@ -189,6 +195,7 @@ body {
     margin-top: -30px; /* Moves the element away from the top of the div element/ container */
   }
   
+/* Content that appears in the dropdown for the hovering dropdown menu button */  
   .dropdown-content {
     display: none;
     position: absolute;
@@ -210,10 +217,9 @@ body {
   
   .dropdown:hover .dropdown-content {
     display: block;}
-  
-  .dropdown:hover .dropbtn {
-    background-color: #3e8e41;}
 
+/* Tiles */
+/* Styling for the category labelling text */    
 .category_name{
     font-size: 20px;
     padding: 15px;
@@ -251,36 +257,26 @@ body {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-
+/* Animation that plays when a user hovers over a tile */
 .tile:hover {
     transform: translateY(-10px);
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+/* Styling for the heading element in the tiles */
 .tile h2 {
     margin-bottom: 15px;
     font-size: 24px;
     color: #333;
 }
 
+/* Styling for the paragraph element in the tiles */
 .tile p {
     font-size: 16px;
     color: #666;
 }
 
+/* Styling for the footer */
 footer{
-    margin: 15px;
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-    .tiles-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .tile {
-        width: 80%;
-        margin-bottom: 20px;
-    }
+    margin: 15px; /* Creates space around the border of an element like text, images or objects */
 }
