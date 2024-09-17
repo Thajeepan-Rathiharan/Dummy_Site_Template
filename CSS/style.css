@@ -102,6 +102,7 @@ body {
     max-width: 300px; /* Optional max-width */
     background-color: #333;
     padding: 20px;
+    margin-left: 25px;
     position: absolute; /* Use absolute positioning */
     top: 80px; /* Adjusted to appear below the button */
     left: 20px; /* Align menu with the button horizontally */
@@ -117,7 +118,7 @@ body {
 .side-menu.show {
     display: block; /* Show the menu when 'show' class is added */
     margin-top: 65px; /* Adding spacing above the menu bar element to move it down */
-    width: 200px; /* Increased the width of the menu bar */
+    width: 210px; /* Increased the width of the menu bar */
 }
 
 /* Styling for the menu list */
@@ -147,15 +148,15 @@ body {
 /* Quick Access Tiles text styling */
 .qat{
     font-size: 25px;
-    margin-left: 225px;
+    margin-left: 285px;
     padding: 15px;
 }
 
 /* Outer box CSS rules */
 .outer-box{
     width: auto;
-    max-width: 1000px;
-    margin-left: 250px;
+    max-width: 1500px;
+    margin-left: 300px;
     padding: 20px;
     background-color: grey;
     border: 2px solid;
@@ -192,7 +193,7 @@ body {
   .dropdown {
     position: relative; /* This positions the dropdown-content relative to the dropdown button */
     display: inline-block;
-    margin-left: 850px; /* Moves the element away from the left side of the screen */
+    margin-left: 1350px; /* Moves the element away from the left side of the screen */
     margin-top: -30px; /* Moves the element away from the top of the div element/ container */
   }
   
@@ -228,15 +229,16 @@ body {
 
 /* Outer box for each category of tiles */
 .tile-group {
-    padding: 10px; /* Adjust padding to fit closely around content */
-    margin: 20px auto; /* Add margin between each group of tiles, centered */
+    padding: 20px; /* Adjust padding to fit closely around content */
+    margin: 30px auto; /* Add margin between each group of tiles, centered */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for the outer box */
     border-radius: 10px; /* Optional: Rounded corners for the outer box */
     background-color: #f9f9f9; /* Optional: Light background color */
-    width: fit-content; /* Ensures the box only grows to fit content */
+    width: 1200px; /* Ensures the box only grows to fit content */
+    
     display: inline-block; /* Make it fit tightly around the content */
     position: relative;
-    left: 170px;
+    left: 140px;
 }
 
 /* Container for the tiles */
@@ -250,10 +252,10 @@ body {
 /* Individual tile styling */
 .tile {
     background-color: #fff;
-    width: 200px; /* Set a fixed width for tiles to fit neatly */
-    padding: 20px;
+    width: 250px; /* Set a fixed width for tiles to fit neatly */
+    padding: 30px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    border-radius: 10px;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
 }
