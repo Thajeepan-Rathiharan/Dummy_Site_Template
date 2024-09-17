@@ -12,6 +12,16 @@ body {
     padding: 0;
 }
 
+/* CSS rules for logo */
+.logo{
+    background-image: url('../IMG/Logo.png');
+    background-size: contain;  /* Makes sure the image fits the element */
+    background-repeat: no-repeat;
+    width: 250px;   /* Adjust to make the image fit perfectly in the header section */
+    text-indent: -9999px; /* Hides the "HomeMaster" text while the image is loaded */
+    display: block;
+}
+
  /* Header styles */
  .header {
     background-color: #333;
