@@ -155,6 +155,45 @@ body {
     background-color: #575757;
 }
 
+/* Basic styling for the side menu */
+.sub-side-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sub-side-menu ul li {
+    position: relative;
+  }
+  
+  .sub-side-menu a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .sub-side-menu a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Sub-submenu styling */
+  .sub-submenu {
+    display: none; /* Hidden by default */
+    list-style: none;
+    padding-left: 20px; /* Indent the submenu */
+  }
+  
+  .sub-submenu li a {
+    padding: 10px 20px;
+  }
+  
+  /* Add a class to show the submenu when clicked */
+  .sub-show-submenu .submenu {
+    display: block;
+  }
+  
+
 /* Quick Access Tiles text styling */
 .qat{
     font-size: 25px;

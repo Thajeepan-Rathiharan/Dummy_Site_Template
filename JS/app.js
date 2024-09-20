@@ -31,3 +31,21 @@ const menu = document.getElementById('menu');
 menuButton.addEventListener('click', () => {
     menu.classList.toggle('show');
 });
+ // Get all menu items that have a submenu
+    document.querySelectorAll('.has-submenu > .menu-item').forEach(function (menuItem) {
+        // Add click event listener to each of them
+        menuItem.addEventListener('click', function (e) {
+            // Prevent default link behavior
+            e.preventDefault();
+
+            // Get the submenu for this item
+            let submenu = this.nextElementSibling;
+
+            // Toggle the 'active' class to show/hide the submenu
+            if (submenu.style.display === 'block') {
+                submenu.style.display = 'none';
+            } else {
+                submenu.style.display = 'block';
+            }
+        });
+    });
